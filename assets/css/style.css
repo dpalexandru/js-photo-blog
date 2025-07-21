@@ -12,7 +12,7 @@
 header {
     background-image: url('/assets/img/wall.png');
     background-size: cover;
-    height: 100px;
+    height: 120px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@ header {
 
 #titolo {
     font-family: 'Patrick Hand';
-    font-size: 70px;
+    font-size: 60px;
 }
 
 
@@ -30,13 +30,16 @@ header {
 main {
     background-image: url('/assets/img/cork.png');
     height: 100%;
+    min-height: 100vh;
 }
 
 .card-polaroid {
-    height: 400px;
+    height: 380px;
     width: 300px;
     background-color: white;
     padding: 15px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .card-polaroid img {
@@ -47,4 +50,29 @@ main {
     font-family: 'Sometype Mono', monospace;
 }
 
-#titolo-card {}
+#titolo-card {
+    font-family: 'Edu TAS Beginner', sans-serif;
+}
+
+#pin {
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 46%;
+    transform: translateY(-35%);
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 991px) {
+    #titolo {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 767px) {
+    #titolo {
+        font-size: 50px;
+    }
+}
