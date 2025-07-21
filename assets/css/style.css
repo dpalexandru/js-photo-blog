@@ -29,5 +29,22 @@ header {
 
 main {
     background-image: url('/assets/img/cork.png');
-    height: calc(100vh - 100px);
+    height: 100%;
 }
+
+.card-polaroid {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+}
+
+.card-polaroid img {
+    height: 270px
+}
+
+#data {
+    font-family: 'Sometype Mono', monospace;
+}
+
+#titolo-card {}
