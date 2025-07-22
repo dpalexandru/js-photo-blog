@@ -11,7 +11,7 @@ axios.get(imgLink).then(resp => {
     const immages = resp.data;
 
     //Ciclo immages per inserire i dati recuperati in card
-    for (i = 0; i < immages.length; i++) {
+    for (let i = 0; i < immages.length; i++) {
 
         //Destructuring a ogni ciclo
         const { title, url, date } = immages[i];
@@ -33,4 +33,19 @@ axios.get(imgLink).then(resp => {
                 </div>
         `
     }
+
+    //recupero le card
+    const cards = document.querySelectorAll('.card-polaroid');
+
+    // Aggiungo event listner a Card che faccia comparire l'overlay al click
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            //Recupero container overlay
+            const overlayOn = document.getElementById('overlay');
+
+            //Sostituisco la calsse 
+            overlayOn.classList.remove('d-none');
+            overlayOn.classList.add('d-block');
+        });
+    });
 });
