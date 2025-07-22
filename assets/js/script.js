@@ -48,4 +48,15 @@ axios.get(imgLink).then(resp => {
             overlayOn.classList.add('d-block');
         });
     });
+
+    //Aggiungo evento per chiudere l'overlay quando viene premuto il button
+    const chiudi = document.getElementById('chiudi')
+
+    chiudi.addEventListener('click', () => {
+        //Recupero container overlay
+        const overlayOn = document.getElementById('overlay');
+
+        //Sostituisco la calsse 
+        overlayOn.classList.add('d-none');
+    });
 });
