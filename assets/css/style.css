@@ -31,6 +31,7 @@ main {
     background-image: url('/assets/img/cork.png');
     height: 100%;
     min-height: 100vh;
+    padding-bottom: 30px;
 }
 
 .card-polaroid {
@@ -40,6 +41,7 @@ main {
     padding: 15px;
     margin: 0 auto;
     position: relative;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card-polaroid img {
@@ -52,6 +54,8 @@ main {
 
 #titolo-card {
     font-family: 'Edu TAS Beginner', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 #pin {
