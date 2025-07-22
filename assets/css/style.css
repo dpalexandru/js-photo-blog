@@ -67,6 +67,43 @@ main {
 }
 
 
+/* Overlay chiudi e immagine centrata */
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.overlay img {
+    width: 50%;
+    min-width: 400px;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#chiudi {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000000;
+    padding: 3px 30px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 /* Mobile Responsive */
 
 @media (max-width: 991px) {
