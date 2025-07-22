@@ -42,6 +42,7 @@ main {
     margin: 0 auto;
     position: relative;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
 .card-polaroid img {
@@ -101,6 +102,20 @@ main {
     font-size: 25px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+
+/* Effetto Hover per la card */
+
+.card-polaroid:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 1);
+    transform: scale(1.1) rotate(10deg);
+    z-index: 2;
+}
+
+.card-polaroid:hover #pin {
+    opacity: 0;
 }
 
 
