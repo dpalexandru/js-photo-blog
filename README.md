@@ -51,3 +51,10 @@ Ci sono diversi modi di farlo, prova a sperimentare 🙂
 Bonus
 
 Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta, il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare
+
+### Cosa ho imparato 
+
+Da questo progetto ho imparato a usare le chiamate Axios per recuperare dati da un’API e visualizzarli dinamicamente nel DOM. Ho capito come funziona il forEach per assegnare eventi a più elementi, e ho imparato a manipolare il src delle immagini e a gestire un overlay con apertura e chiusura al click. Ho sperimentato anche con CSS avanzato come hover, transform, scale e rotate, migliorando l'interattività e lo stile delle card. È stata la mia prima vera esperienza nel costruire qualcosa di dinamico e visivamente curato.
+
+# Consegna 22/07/2025 
+
