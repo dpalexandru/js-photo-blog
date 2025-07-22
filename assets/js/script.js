@@ -59,4 +59,18 @@ axios.get(imgLink).then(resp => {
         //Sostituisco la calsse 
         overlayOn.classList.add('d-none');
     });
+
+    //Troviamo l'indirizzo corretto dell'immagine 
+    cards.forEach((elem) => {
+
+        elem.addEventListener('click', () => {
+            //Recupero link immagine 
+            const img = elem.querySelector('img');
+
+            //sostituisco in overlay
+            const overlayImg = document.getElementById('overlayImg');
+            overlayImg.src = img.src;
+        })
+
+    })
 });
